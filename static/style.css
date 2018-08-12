@@ -5,3 +5,27 @@
 }
 
 /* Put your styles BELOW this line */
+.name{
+	width: 400px;
+	margin: auto;
+	font-family: "Trebuchet MS", Times, serif;
+	color: green;
+}
+
+.story{
+	width: 400px;
+	margin: auto;
+	font-family: "Trebuchet MS", Times, serif;
+}
+
+h1{
+	font-family: "Trebuchet MS", Times, serif;
+	color: green;
+}
+
+
+h4{
+	font-family: "Trebuchet MS", Times, serif;
+	color: green;
+}
+}
