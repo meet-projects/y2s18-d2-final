@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: green;
+    padding: 30 px;
+
+}
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+li a:hover {
+    background-color: white;
+}
+</style>
+        <title>My Final Project</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <ul>
+            <li><a href="default.asp">Home</a></li>
+            <li><a href="news.asp">Stories</a></li>
+            <li><a href="contact.asp">Post Your Story!</a></li>
+        </ul>
+    </body>
+</html>
