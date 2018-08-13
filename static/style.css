@@ -7,9 +7,28 @@ body {
 /** {
     padding: 0;
     margin: 0;
+    top : 10;
 }
 */
 
+<<<<<<< HEAD
+/* Put your styles BELOW this line */
+ body {
+ 	background-color: black;
+ 	color : white;
+ 	font-style: italic;
+ 	position : fixed;
+ 	width : 90%;
+ 	margin: auto;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 55px;
+    background-image: url("bla.jpeg");
+    background-repeat: no-repeat;
+    background-size : 1400px 900px;
+
+ }
+=======
 
 /* Put your styles BELOW this line */
 /*ul {
@@ -73,3 +92,4 @@ h4{
 	font-family: "Trebuchet MS", Times, serif;
 	color: green;
 }
+>>>>>>> 5a311f2fd4217163865ecb4f9abc77ada3c88ad1
