@@ -18,8 +18,8 @@ def add_article(title, content):
     session.commit()
 
 def get_all_articles():
-    articles = session.query(Article).all()
-    return articles
+  articles = session.query(Article).all()
+  return articles
 
 
 def add_user(nationality, name, email, password):
@@ -29,12 +29,12 @@ def add_user(nationality, name, email, password):
     session.commit()
 
 def get_all_users():
-    users = session.query(User).all()
-    return users
+  users = session.query(User).all()
+  return users
 
 
 
-print(get_all_users())    
+print(get_all_users())   
 
 
 
