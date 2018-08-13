@@ -1,10 +1,19 @@
+
 * {
-    /* Removes extra spacing from all elements on the page */
     padding: 0;
     margin: 0;
 }
 
+
+
 /* Put your styles BELOW this line */
+/*ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+*/
 .name{
 	width: 400px;
 	margin: auto;
@@ -58,5 +67,4 @@ h1{
 h4{
 	font-family: "Trebuchet MS", Times, serif;
 	color: green;
-}
 }
