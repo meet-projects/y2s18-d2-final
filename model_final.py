@@ -5,10 +5,8 @@ from sqlalchemy import create_engine
 
 Base = declarative_base()
 
-# Place your database schema code here
 
-# Example code:
-class article(Base):
+class Article(Base):
     __tablename__ = "articles"
     id = Column(Integer, primary_key = True)
     title = Column(String)
@@ -16,3 +14,18 @@ class article(Base):
 
     def __repr__(self):
         return ("article title: {}, article content:{}".format(self.title, self.content))
+
+
+
+
+class User(base):
+  __tablename__="users"
+  id=Column(Integer, primary_key=True)
+  nationality=Column(String)
+  name=Column(String)
+  email=Column(String) 
+
+
+  def __repr__(self):
+        return ("user nationality: {}, user name:{}, user email:{}".format(self.nationality, self.name, self.email))
+       
