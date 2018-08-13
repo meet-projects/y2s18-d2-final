@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+    {% block head %}{% endblock %}
 <style>
 ul {
     font-family: "Trebuchet MS", Times, serif;
     list-style-type: none;
     margin: 0;
-    padding : 15px;
+    padding : 0;
     overflow: hidden;
-    background-color: green;
+    background-color: white;
+    border: 2px solid black;
 }
 li {
     float: left;
@@ -23,6 +25,7 @@ li a {
 }
 #navbarmany {
     padding-left: 250px;
+   
 }
 li a:hover {
     background-color: white;
@@ -37,5 +40,8 @@ li a:hover {
             <li><a href="news.asp">Stories</a></li>
             <li><a href="contact.asp">Post Your Story!</a></li>
         </ul>
+    {% block body %}{% endblock %}
+
+
     </body>
 </html>
