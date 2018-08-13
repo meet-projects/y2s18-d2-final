@@ -1,11 +1,15 @@
-<!DOCTYPE html>
-<html>
-    <head>
+{% extends "Navigationbar.html" %}
+
+ {% block head %} 
 
         <title>storeal</title>
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styleMor.css') }}">
 
         <link rel="stylesheet" type="text/css" href="../static/styleMor.css">
+
+{% endblock %}
+        
+        {% block body %}
     </head>
     <body>
     	<div class="story">
@@ -19,4 +23,5 @@
         	<input id="submit" type="submit" value="share story">
         </form>
     </div>
+    {% endblock %}
 </body>
