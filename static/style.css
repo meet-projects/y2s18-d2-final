@@ -1,11 +1,12 @@
+
 * {
-    /* Removes extra spacing from all elements on the page */
     padding: 0;
     margin: 0;
     top : 10;
 }
 
 
+<<<<<<< HEAD
 /* Put your styles BELOW this line */
  body {
  	background-color: black;
@@ -22,3 +23,68 @@
     background-size : 1400px 900px;
 
  }
+=======
+
+/* Put your styles BELOW this line */
+/*ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+*/
+.name{
+	width: 400px;
+	margin: auto;
+	font-family: "Trebuchet MS", Times, serif;
+	color: green;
+}
+
+.story{
+	position: absolute;
+    left: 250px;
+    top: 80px;
+    width: 60%;
+	font-family: "Trebuchet MS", Times, serif;
+	font-size: 35px;
+}
+
+input[type=text]{
+	width: 100%;
+	height: 40px;
+}
+
+
+input[type=password]{
+	width: 100%;
+	height: 40px;
+}
+
+#other{
+	width: 50%;
+	height: 15px;
+}
+
+.nationality{
+	position: absolute;
+    left: 250px;
+    top: 360px;
+    width: 60%;
+	font-family: "Trebuchet MS", Times, serif;
+	font-size: 20px;
+}
+
+
+h1{
+	font-family: "Trebuchet MS", Times, serif;
+	color: green;
+	text-align: center;
+	font-size: 100px;
+}
+
+
+h4{
+	font-family: "Trebuchet MS", Times, serif;
+	color: green;
+}
+>>>>>>> 5a311f2fd4217163865ecb4f9abc77ada3c88ad1
