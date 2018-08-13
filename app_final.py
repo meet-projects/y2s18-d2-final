@@ -33,9 +33,7 @@ def add_articles_route():
     content = request.form['article_content']
 
     add_article(title, content)        
-    return render_template(#'name of the file.html',
-      t = title,
-      c = content)
+    
 
 
 
@@ -52,11 +50,7 @@ def signup_route():
     password= request.form['password']
 
     add_user(nationality, name, email, password)        
-    return render_template(#'name of the file.html',
-      nat = nationality,
-      nam= name,
-      e = email,
-      p=password)
+    
 
     # i should check with the other group members if they what they want to happen after the user sign up 
     #(meaning: which html page should the user see once he is finshed signing up? )
