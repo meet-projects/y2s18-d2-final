@@ -29,9 +29,11 @@ def add_articles_route():
   else:
     print ('Received POST request for adding an article!')
     title = request.form['article_title']
-    content = request.form['article_content']
 
-    add_article(title, content)        
+    content = request.form['article_content']
+    print ('hey')
+    add_article(title, content)
+    return render_template('home.html')        
     
 
 
@@ -47,17 +49,23 @@ def signup_route():
     name = request.form['name']
     email = request.form['email']
     password= request.form['password']
-    print("hey!")
-    add_user(nationality, name, email, password)        
+
+    add_user(nationality, name, email, password)
     return render_template('home.html')
 
-    # i should check with the other group members if they what they want to happen after the user sign up 
-    #(meaning: which html page should the user see once he is finshed signing up? )
+
+@app.route('/stories')
+def stories_page():
+       
+
 
 # @app.route('/login', methods=['GET', 'POST'])
 # def login_route():
 #   if request.method == 'POST':
-#     if request.form['password']=='password':
+
+#    if request.form['password']=='password' and request.form['name']=='name':
+#      return render_template('') 
+
 
 #   else:
 #     return render_template(#'name of file .html'
