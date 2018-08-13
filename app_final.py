@@ -22,7 +22,6 @@ def home():
 #    return render_template(#name of file '.html'
 #    	)     
 
-
 @app.route('/add_article', methods=['GET', 'POST'])
 def add_articles_route():
   if request.method == 'GET':
