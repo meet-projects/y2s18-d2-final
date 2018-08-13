@@ -25,6 +25,7 @@ body {
     margin-left: 55px;
     background-image: url("last.jpg");
     background-color: white;
+
     background-repeat: no-repeat;
     background-size : 1300px 790px;
 
@@ -38,6 +39,7 @@ body {
 }
 
 */
+<<<<<<< HEAD
 .name{
 	width: 400px;
 	margin: auto;
@@ -92,3 +94,5 @@ h4{
 	font-family: "Trebuchet MS", Times, serif;
 	color: green;
 }
+=======
+>>>>>>> d46128c5fb922a13b0a2621faa2b489959d3e6a0

@@ -36,9 +36,8 @@ li a:hover {
     </head>
     <body>
         <ul id="navbarmany">
-            <li ><a href="default.asp">Home</a></li>
-            <li><a href="news.asp">Stories</a></li>
-            <li><a href="contact.asp">Post Your Story!</a></li>
+            <li ><a href="{{ url_for('home')}}">Home</a></li>
+            <!-- <li><a href="news.asp">Stories</a></li> -->
         </ul>
     {% block body %}{% endblock %}
 
