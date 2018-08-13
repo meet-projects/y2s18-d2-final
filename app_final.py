@@ -18,12 +18,18 @@ def home():
     return render_template('home.html')
 
 <<<<<<< HEAD
+<<<<<<< HEAD
  
 =======
+=======
+>>>>>>> 74e1558ff89ccf3264e929f8c7f9434f987c2881
 # @app.route('/articles')
 # def articles():
 #    return render_template(#name of file '.html'
 #    	)     
+<<<<<<< HEAD
+>>>>>>> 74e1558ff89ccf3264e929f8c7f9434f987c2881
+=======
 >>>>>>> 74e1558ff89ccf3264e929f8c7f9434f987c2881
 
 
