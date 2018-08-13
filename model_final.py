@@ -10,7 +10,7 @@ class Article(Base):
     __tablename__ = "articles"
     id = Column(Integer, primary_key = True)
     title = Column(String)
-     content= Column(String)
+    content= Column(String)
 
     def __repr__(self):
         return ("article title: {}, article content:{}".format(self.title, self.content))
@@ -18,12 +18,13 @@ class Article(Base):
 
 
 
-class User(base):
+class User(Base):
   __tablename__="users"
   id=Column(Integer, primary_key=True)
   nationality=Column(String)
   name=Column(String)
-  email=Column(String) 
+  email=Column(String)
+  password=Column(String) 
 
 
   def __repr__(self):

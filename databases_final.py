@@ -22,15 +22,16 @@ def get_all_articles():
     return articles
 
 
-def add_user(nationality, name, email):
+def add_user(nationality, name, email, password):
     print("Added a user!")
-    user = User(nationality=nationality, name=name, email=email)
+    user = User(nationality=nationality, name=name, email=email, password=password)
     session.add(user)
     session.commit()
 
 def get_all_users():
     users = session.query(User.all())
     return users
+
 
 
 
