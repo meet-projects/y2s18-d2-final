@@ -13,20 +13,21 @@ body {
 
 /* Put your styles BELOW this line */
  body {
- 	background-color: black;
+/* 	background-color: black*/;
  	color : white;
- 	font-style: italic;
+ 	/*font-style: italic;*/
  	position : fixed;
  	width : 90%;
  	margin: auto;
     text-align: center;
-    margin-top: 100px;
+	font-family: 'Didact Gothic';font-size: 22px;
+    margin-top: 15px;
     margin-left: 55px;
+    background-image: url("last.jpg");
+    background-color: white;
 
-    background-image: url("");
-    background-image: url("dapic.jpg");
     background-repeat: no-repeat;
-    background-size : 1300px 790px;
+    background-size : 1400px 790px;
 
  }
 
@@ -38,11 +39,12 @@ body {
 }
 
 */
+
 .name{
 	width: 400px;
 	margin: auto;
-	font-family: "Palanquin", Times, serif;
-	color: green;
+	font-family: "Trebuchet MS", Times, serif;
+	color: white;
 }
 
 .story{
@@ -50,10 +52,9 @@ body {
     left: 250px;
     top: 80px;
     width: 60%;
-	font-family: "Palanquin", Times, serif;
+	font-family: "Trebuchet MS", Times, serif;
 	font-size: 35px;
 }
-
 
 input[type=text]{
 	width: 100%;
@@ -63,10 +64,6 @@ input[type=text]{
 
 input[type=password]{
 	width: 100%;
-	height: 40px;
-}
-input[type=submit]{
-	width: 35%;
 	height: 40px;
 }
 
@@ -80,20 +77,21 @@ input[type=submit]{
     left: 250px;
     top: 360px;
     width: 60%;
-	font-family: "Palanquin", Times, serif;
+	font-family: "Trebuchet MS", Times, serif;
 	font-size: 20px;
 }
 
 
 h1{
-	font-family: "Palanquin", Times, serif;
-	color: green;
+	font-family: "Trebuchet MS", Times, serif;
+	color: white;
 	text-align: center;
 	font-size: 100px;
 }
 
 
 h4{
-	font-family: "Palanquin", Times, serif;
+	font-family: "Trebuchet MS", Times, serif;
 	color: green;
 }
+
