@@ -21,9 +21,9 @@ li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 100px;
+    padding: 14px 125px;
 }
-#navbarmany {
+.navbarmany {
     padding-left: 250px;
    
 }
@@ -32,17 +32,12 @@ li a:hover {
 }
 </style>
         <title>My Final Project</title>
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+        <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"> -->
     </head>
     <body>
-        <ul id="navbarmany">
+        <ul class="navbarmany">
             <li ><a href="{{ url_for('home')}}">Home</a></li>
-<<<<<<< HEAD
-            <li><a href="news.asp">Stories</a></li>
-            <li><a href="{{ url_for('story.html')}}">Post Your Story!</a></li>
-=======
-            <!-- <li><a href="news.asp">Stories</a></li> -->
->>>>>>> d46128c5fb922a13b0a2621faa2b489959d3e6a0
+            <li><a href="{{ url_for('add_articles_route')}}">Post Your Story!</a></li>
         </ul>
     {% block body %}{% endblock %}
 
