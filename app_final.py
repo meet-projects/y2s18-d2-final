@@ -2,7 +2,7 @@ from flask import Flask, render_template, url_for, redirect, request, session
 
 from databases_final import add_article, get_all_articles, add_user, get_all_users
 
-import os  
+# import os  
 
 
 app = Flask(__name__)
@@ -47,9 +47,9 @@ def signup_route():
     name = request.form['name']
     email = request.form['email']
     password= request.form['password']
-
+    print("hey!")
     add_user(nationality, name, email, password)        
-    
+    return render_template('home.html')
 
     # i should check with the other group members if they what they want to happen after the user sign up 
     #(meaning: which html page should the user see once he is finshed signing up? )
