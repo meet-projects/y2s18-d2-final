@@ -2,6 +2,23 @@
     /* Removes extra spacing from all elements on the page */
     padding: 0;
     margin: 0;
+    top : 10;
 }
 
+
 /* Put your styles BELOW this line */
+ body {
+ 	background-color: black;
+ 	color : white;
+ 	font-style: italic;
+ 	position : fixed;
+ 	width : 90%;
+ 	margin: auto;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 55px;
+    background-image: url("bla.jpeg");
+    background-repeat: no-repeat;
+    background-size : 1400px 900px;
+
+ }
