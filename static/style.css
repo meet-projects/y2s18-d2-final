@@ -1,10 +1,19 @@
+
 * {
-    /* Removes extra spacing from all elements on the page */
     padding: 0;
     margin: 0;
 }
 
+
+
 /* Put your styles BELOW this line */
+/*ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+*/
 .name{
 	width: 400px;
 	margin: auto;
@@ -13,19 +22,49 @@
 }
 
 .story{
-	width: 400px;
-	margin: auto;
+	position: absolute;
+    left: 250px;
+    top: 80px;
+    width: 60%;
 	font-family: "Trebuchet MS", Times, serif;
+	font-size: 35px;
 }
+
+input[type=text]{
+	width: 100%;
+	height: 40px;
+}
+
+
+input[type=password]{
+	width: 100%;
+	height: 40px;
+}
+
+#other{
+	width: 50%;
+	height: 15px;
+}
+
+.nationality{
+	position: absolute;
+    left: 250px;
+    top: 360px;
+    width: 60%;
+	font-family: "Trebuchet MS", Times, serif;
+	font-size: 20px;
+}
+
 
 h1{
 	font-family: "Trebuchet MS", Times, serif;
 	color: green;
+	text-align: center;
+	font-size: 100px;
 }
 
 
 h4{
 	font-family: "Trebuchet MS", Times, serif;
 	color: green;
-}
 }
