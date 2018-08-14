@@ -7,6 +7,10 @@
 
         <link rel="stylesheet" type="text/css" href="../static/styleMor.css">
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <script src="story.js"></script>
+
 {% endblock %}
         
         {% block body %}
@@ -15,13 +19,15 @@
     	<div class="story">
     		<form method="POST">
     		<h1>share your story!</h1>
-        	<input type="text" name="story_title" placeholder="title">
+
+        	<input type="text" name="article_title" placeholder="title">
         	<br>
+
             <br>
             <h4>write your story here!</h4>
-            <textarea rows="10" cols="96"></textarea>
+            <textarea rows="10" name="article_content" cols="96"></textarea>
         	<br>
-        	<input type="submit" value="share story">
+        	<input id="submit" type="submit" value="share story">
         </form>
     </div>
     {% endblock %}
