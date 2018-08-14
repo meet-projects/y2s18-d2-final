@@ -6,6 +6,11 @@
 }
 */
 .signUp{
+}
+
+
+
+.story{
 	position: absolute;
     left: 250px;
     top: 40px;
@@ -58,4 +63,15 @@ h1{
 h4{
 	font-family: "Palanquin", Times, serif;
 	color: green;
+	margin-bottom: 0px;
+}
+
+h2{
+	font-family: "Palanquin", Times, serif;
+	color: green;
+	text-align: center;
+	font-size: 200px;
+	margin: 0px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
