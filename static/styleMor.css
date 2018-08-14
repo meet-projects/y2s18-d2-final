@@ -72,6 +72,16 @@ h2{
 	text-align: center;
 	font-size: 150px;
 	margin: 0px;
-	margin-top: 100px;
+	margin-top: 80px;
 	margin-bottom: 20px;
+}
+
+a{
+	font-family: "Palanquin", Times, serif;
+	color: green;
+	font-size: 50px;
+	margin: 0px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	left:50px;
 }
