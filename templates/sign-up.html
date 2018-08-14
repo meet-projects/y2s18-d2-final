@@ -1,14 +1,17 @@
-<!DOCTYPE html>
-<html>
-    <head>
+{% extends "Navigationbar.html" %}
+
+ {% block head %} 
+
 
         <title>storeal</title>
 
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styleMor.css') }}">
 
         <link rel="stylesheet" type="text/css" href="../static/styleMor.css">
-    </head>
-    <body>
+   {% endblock %}
+        
+    {% block body %}
+        
     	
 
     	<div class="signUp">
@@ -37,5 +40,6 @@
       		<input type="submit" value="submit">
         </form>
     </div>
+    {% endblock %}
+
     </body>
-</html>
