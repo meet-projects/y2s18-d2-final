@@ -35,7 +35,7 @@ def add_articles_route():
     add_article(title, content)
     return render_template('home.html')        
     
-
+    
 
 
 
