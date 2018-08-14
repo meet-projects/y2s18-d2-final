@@ -62,8 +62,7 @@ def signup_route():
 @app.route('/stories')
 def stories_page():
 
-  return render_template(#'name of page', g=get_all_articles() 
-    )
+  return render_template('stories_page.html', articles = get_all_articles())
 
 
 @app.route('/login', methods=['GET', 'POST'])
