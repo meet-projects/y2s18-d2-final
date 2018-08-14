@@ -36,7 +36,7 @@ def get_all_users():
 def query_by_username(name):
   users= session.query(
     User).filter_by(
-    name=name).all()
+    name=name).first()
   return users 
 
 def query_by_password(password):

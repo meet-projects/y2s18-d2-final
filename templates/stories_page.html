@@ -1,14 +1,16 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Bootstrap Theme Company</title>
+{% extends "Navigationbar.html" %}
+
+ {% block head %} 
+   <title>Bootstrap Theme Company</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<body>
+{% endblock %}
+        
+    {% block body %}
 
  <div class="jumbotron text-center">
   <h1>Company</h1> 
@@ -26,43 +28,17 @@
 
 
 <div class="container-fluid text-center">
-  <h2>SERVICES</h2>
-  <h4>What we offer</h4>
+  <h2>STORIES!</h2>
+  <h4>Discover new perspectives</h4>
   <br>
   <div class="row">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-off"></span>
-      <h4>POWER</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-heart"></span>
-      <h4>LOVE</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-lock"></span>
-      <h4>JOB DONE</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    </div>
-    <br><br>
-  <div class="row">
+    {% for article in articles %}
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-leaf"></span>
-      <h4>GREEN</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
+      <h4>{{article.title}}</h4>
+      <p>{{article.content[:30]}}</p>
     </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-certificate"></span>
-      <h4>CERTIFIED</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-wrench"></span>
-      <h4>HARD WORK</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
+    {% endfor %}
   </div>
 </div>
 
@@ -75,7 +51,7 @@
   <h2 class="text-center">CONTACT</h2>
   <br>
   <br>
-<br>
+  <br>
 
   <div class="row">
     <div class="col-sm-5">
@@ -103,5 +79,6 @@
   </div>
 </div>
 
+    {% endblock %}
+
 </body>
-</html>

@@ -37,9 +37,9 @@ li a:hover {
     <body>
         <ul class="navbarmany">
             <li ><a href="{{ url_for('home')}}">Home</a></li>
-            <li ><a href="{{ url_for('home')}}">Read Stories</a></li>
+            <li ><a href="{{ url_for('stories_page')}}">Read Stories</a></li>
             <li><a href="{{ url_for('add_articles_route')}}">Share Your Story!</a></li>
-            <li ><a href="{{ url_for('home')}}">Log In!</a></li>
+            <li ><a href="{{ url_for('login_route')}}">Log In!</a></li>
         </ul>
     {% block body %}{% endblock %}
 
