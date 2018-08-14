@@ -15,7 +15,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-	return render_template('home.html')
+	return render_template('NEW_HOME.html')
 
 # @app.route('/articles')
 # def articles():
@@ -35,7 +35,7 @@ def add_articles_route():
         content = request.form['article_content']
         print ('hey')
         add_article(title, content)
-        return render_template('home.html')        
+        return render_template('NEW_HOME.html')        
       else:
         print('not logged in')
 
@@ -56,7 +56,7 @@ def signup_route():
 		password= request.form['password']
 
 		add_user(nationality, name, email, password)
-		return render_template('home.html')
+		return render_template('NEW_HOME.html')
 
 
 @app.route('/stories')
