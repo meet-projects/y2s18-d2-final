@@ -33,8 +33,16 @@ def get_all_users():
   return users
 
 
+def query_by_username(name):
+  users= session.query(
+    User).filter_by(
+    name=name).all()
+  return users 
 
-print(get_all_users())   
+
+
+# print(get_all_articles())
+ # print(get_all_users())   
 
 
 
