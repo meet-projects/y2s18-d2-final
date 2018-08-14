@@ -5,12 +5,12 @@
 <style>
 ul {
     font-family: "Trebuchet MS", Times, serif;
-    list-style-type: none;
+    text-decoration: underline;
     margin: 0;
     padding : 0;
     overflow: hidden;
-    background-color: transparent;
-    border: 2px solid white;
+    background-color: #1abc9c;
+        color: #ffffff;
 }
 li {
     float: left;
@@ -21,10 +21,10 @@ li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 125px;
+    padding: 14px 80px;
 }
 .navbarmany {
-    padding-left: 250px;
+    padding-left: 200px;
    
 }
 li a:hover {
@@ -37,7 +37,9 @@ li a:hover {
     <body>
         <ul class="navbarmany">
             <li ><a href="{{ url_for('home')}}">Home</a></li>
-            <li><a href="{{ url_for('add_articles_route')}}">Post Your Story!</a></li>
+            <li ><a href="{{ url_for('home')}}">Read Stories</a></li>
+            <li><a href="{{ url_for('add_articles_route')}}">Share Your Story!</a></li>
+            <li ><a href="{{ url_for('home')}}">Log In!</a></li>
         </ul>
     {% block body %}{% endblock %}
 
