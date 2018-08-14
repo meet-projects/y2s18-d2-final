@@ -22,11 +22,11 @@ class User(Base):
   __tablename__="users"
   id=Column(Integer, primary_key=True)
   nationality=Column(String)
-  name=Column(String)
+  name=Column(String, unique=True )
   email=Column(String)
   password=Column(String) 
 
 
   def __repr__(self):
-    return ("user nationality: {}, user name:{}, user email:{}".format(self.nationality, self.name, self.email))
+    return ("user nationality: {}, user name:{}, user email:{} user password:{}".format(self.nationality, self.name, self.email,self.password))
        
