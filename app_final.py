@@ -62,25 +62,25 @@ def login_route():
   if request.method == 'POST':
     print('hey')
     user=query_by_username(request.form['name'])
-    print (str(user))
     if user==None:
-      return render_template('sign-up.html')
+      return redirect (url_for('signup_route'))
 
     else:
       if request.form['password']==user.password:
         session['logged_in'] = True
-        sesion['user_id']=user.id
+        session['user_id']=user.id
         return render_template('login.html')
   else:
     return render_template('log_in.html')            
       
 
 
-
-#   else:
-#     return render_template(#'name of file .html'
-#       )
-  
+@app.route('/logout')
+def logout_route():
+  del session['user_id']
+  session['logged_in']=False
+  return redirect(url_for('home'))
+  print('loged out')
 
 
 
