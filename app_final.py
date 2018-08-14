@@ -15,7 +15,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-	return render_template('home.html')
+	return render_template('NEW_HOME.html')
 
 # @app.route('/articles')
 # def articles():
@@ -24,7 +24,6 @@ def home():
 
 @app.route('/add_article', methods=['GET', 'POST'])
 def add_articles_route():
-
   if session['logged_in']==True:  
       if request.method == 'GET':
         return render_template('story.html')
@@ -35,10 +34,11 @@ def add_articles_route():
         content = request.form['article_content']
         print ('hey')
         add_article(title, content)
-        return render_template('home.html')        
+        return render_template('story2.html')        
       else:
-        print('not logged in')
-
+        return render_template(#''
+            )
+         
 
 
 
@@ -56,7 +56,7 @@ def signup_route():
 		password= request.form['password']
 
 		add_user(nationality, name, email, password)
-		return render_template('home.html')
+		return render_template('NEW_HOME.html')
 
 
 @app.route('/stories')
@@ -76,10 +76,12 @@ def login_route():
       if request.form['password']==user.password:
         session['logged_in'] = True
         sesion['user_id']=user.id
-        return render_template('') 
+        return render_template(#''
+            ) 
       else:
         flash('wrong password!')
         return redirect(url_for('home'))
+
 
 
 
