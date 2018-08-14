@@ -39,6 +39,7 @@ def add_articles_route():
 
 
 
+
 @app.route('/signup', methods=['GET', 'POST'])
 def signup_route():
 	if request.method == 'GET':
