@@ -20,15 +20,25 @@ body {
  	width : 90%;
  	margin: auto;
     text-align: center;
-    margin-top: 100px;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 19px;
+    margin-top: 15px;
     margin-left: 55px;
+    /*background-image: url("last.jpg");*/
+    background-color: #00e6ac;
 
-    background-image: url("");
-    background-image: url("dapic.jpg");
-    background-repeat: no-repeat;
-    background-size : 1300px 790px;
+    /*background-repeat: no-repeat;*/
+    background-size : 1400px 790px;
 
  }
+
+
+h1{
+	font-family:"Courier New", Courier, monospace;
+	font-size: 100px;
+	/*margin-top: 20px;*/
+}
+
 
 /* Put your styles BELOW this line */
 /*ul {
