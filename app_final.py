@@ -24,7 +24,6 @@ def home():
 
 @app.route('/add_article', methods=['GET', 'POST'])
 def add_articles_route():
-
   if session['logged_in']==True:  
       if request.method == 'GET':
         return render_template('story.html')
@@ -40,7 +39,6 @@ def add_articles_route():
         return render_template(#''
             )
          
-
 
 
 
