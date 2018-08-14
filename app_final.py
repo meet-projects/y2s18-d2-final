@@ -15,7 +15,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template('home.html')
+	return render_template('home.html')
 
 # @app.route('/articles')
 # def articles():
@@ -24,39 +24,39 @@ def home():
 
 @app.route('/add_article', methods=['GET', 'POST'])
 def add_articles_route():
-  if request.method == 'GET':
-    return render_template('story.html')
-  else:
-    print ('Received POST request for adding an article!')
-    title = request.form['article_title']
+	if request.method == 'GET':
+		return render_template('story.html')
+	else:
+		print ('Received POST request for adding an article!')
+		title = request.form['article_title']
 
-    content = request.form['article_content']
-    print ('hey')
-    add_article(title, content)
-    return render_template('home.html')        
-    
+	content = request.form['article_content']
+	print ('hey')
+	add_article(title, content)
+	return render_template('home.html')        
+	
 
 
 
 
 @app.route('/signup', methods=['GET', 'POST'])
 def signup_route():
-  if request.method == 'GET':
-    return render_template('sign-up.html')
-  else:
-    print ('Received POST request for sign up!')
-    nationality = request.form['nationality']
-    name = request.form['name']
-    email = request.form['email']
-    password= request.form['password']
+	if request.method == 'GET':
+		return render_template('sign-up.html')
+	else:
+		print ('Received POST request for sign up!')
+		nationality = request.form['nationality']
+		name = request.form['name']
+		email = request.form['email']
+		password= request.form['password']
 
-    add_user(nationality, name, email, password)
-    return render_template('home.html')
+		add_user(nationality, name, email, password)
+		return render_template('home.html')
 
 
 @app.route('/stories')
 def stories_page():
-       
+	pass
 
 
 # @app.route('/login', methods=['GET', 'POST'])
@@ -70,11 +70,11 @@ def stories_page():
 #   else:
 #     return render_template(#'name of file .html'
 #     	)
-    
+	
 
 
 
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+	app.run(debug=True)
