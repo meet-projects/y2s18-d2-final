@@ -1,16 +1,21 @@
-<!DOCTYPE html>
-<html>
-    <head>
+{% extends "Navigationbar.html" %}
 
+ {% block head %} 
         <title>storeal</title>
 
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styleMor.css') }}">
 
         <link rel="stylesheet" type="text/css" href="../static/styleMor.css">
+
     </head>
     <body>
-    	<h3>sorry, you are logged in,</h3>
-        <br>
-        <h3>plese try again</h3>
+        <div class="login">
+    	<p>sorry, you are not logged in,</p>
+        <p>plese try again</p>
+    </div>
+
+    {% endblock %}
+        
+    {% block body %}
+
     </body>
-</html>

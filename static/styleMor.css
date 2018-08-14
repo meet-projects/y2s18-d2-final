@@ -18,62 +18,72 @@
 
 .signUp{
 	position: absolute;
-    margin-left: 250px;
+
+    margin-left:28%;
     top: 40px;
-    width: 60%;
+    width: 40%;
 	font-family: "Palanquin", Times, serif;
 	font-size: 35px;
-	background-color: blue;
+	background-color:#1abc9c;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
 }
 
 .nationality{
 	position: absolute;
-    margin-left: 250px;
+    margin-left:28%;
     top: 340px;
-    width: 60%;
+    width: 40%;
 	font-family: "Palanquin", Times, serif;
 	font-size: 20px;
-	background-color: blue;
+	background-color:#1abc9c;
+	color: white;
+	border-bottom-right-radius: 25px;
+	border-bottom-left-radius: 25px;
 }
 
 
 input[type=text]{
 	width: 50%;
 	height: 40px;
-	margin-left: 200px;
-
+	margin-left: 130px;
 }
-
 
 input[type=password]{
 	width: 50%;
 	height: 40px;
-	margin-left: 200px;
+	margin-left:130px;
+	color: white;
 }
+
 input[type=submit]{
 	width: 35%;
 	height: 40px;
-}
-
-#Palestinian|{
-	width:50% ;
-	height:20px;
-	margin-left:200px;
-}
-
-#Israeli{
+	color:#1abc9c;
+	margin-left:175px;
+	margin-bottom: 30px;
 
 }
+
+input[type=radio]{
+	width: 3%;
+	height: 20px;
+	margin-left: 205px;
+
+}
+
 #other{
-	width: 50%;
-	height: 15px;
+	width: 25%;
+	height: 20px;
+	margin-top:10px;
+	margin-left:200px;
 }
 
 
 
 h1{
 	font-family: "Palanquin", Times, serif;
-	color: green;
+	color:white;
 	text-align: center;
 	top:30px;
 	font-size: 100px;
@@ -82,7 +92,7 @@ h1{
 
 h2{
 	font-family: "Palanquin", Times, serif;
-	color: green;
+	color:white;
 	text-align: center;
 	font-size: 120px;
 	margin: 0px;
@@ -92,7 +102,6 @@ h2{
 
 h3{
 	font-family: "Palanquin", Times, serif;
-	color: green;
 	text-align: center;
 	font-size: 80px;
 	margin: 0px;
@@ -103,8 +112,9 @@ h3{
 
 h4{
 	font-family: "Palanquin", Times, serif;
-	color: green;
-	margin-bottom: 0px;
+	color: white;
+	margin-bottom: 5px;
+	text-align: center;
 }
 
 
@@ -116,4 +126,16 @@ a{
 	margin-top: 20px;
 	margin-bottom: 20px;
 	margin-left:430px;
+}
+
+
+.login{
+	font-family: "Palanquin", Times, serif;
+	background-color:  #1abc9c;
+	color: white;
+	text-align: center;
+	margin: 200px;
+	font-size: 60px;
+	border-radius:25px;
+
 }
