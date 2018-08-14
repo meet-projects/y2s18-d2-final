@@ -39,11 +39,17 @@ def query_by_username(name):
     name=name).all()
   return users 
 
+def query_by_password(password):
+  users= session.query(
+    User).filter_by(
+    password=password).all()
+  return users   
+
 
 
 # print(get_all_articles())
- # print(get_all_users())   
-
+#print(get_all_users())   
+#print(query_by_password('s'))
 
 
 
