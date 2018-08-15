@@ -24,7 +24,7 @@ def add_articles_route():
       title = request.form['article_title']
       content = request.form['article_content']
       
-      add_article(title, content)
+      add_article(title, content,user_id)
       return render_template('story2.html')        
     else:
       return render_template('login.html')
