@@ -91,7 +91,6 @@ input[type=radio]{
 }
 
 
-
 h1{
 	font-family: "Palanquin", Times, serif;
 	color:white;
@@ -149,4 +148,8 @@ a{
 	font-size: 60px;
 	border-radius:25px;
 
+}
+
+.signUp{
+	margin-top: 10%;
 }
