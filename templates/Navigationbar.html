@@ -2,52 +2,55 @@
 <html>
 <head>
     {% block head %}{% endblock %}
-<style>
-ul {
-    font-family: "Trebuchet MS", Times, serif;
-    text-decoration: underline;
-    margin: 0;
-    padding : 0;
-    overflow: hidden;
-    background-color: #1abc9c;
-        color: #ffffff;
-}
-li {
-    float: left;
-}
-/*#Home { padding: 500px; }*/
+    <style>
+        ul {
+            font-family: "Trebuchet MS", Times, serif;
+            text-decoration: underline;
+            margin: 0;
+            padding : 0;
+            overflow: hidden;
+            background-color: #1abc9c;
+            list-style: none;
+            color: #ffffff;
+        }
+        li {
+            float: left;
+        }
+        /*#Home { padding: 500px; }*/
 
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 80px;
-}
-.navbarmany {
-    padding-left: 200px;
-   
-}
-li a:hover {
-    background-color: white;
-    color: #1abc9c;
-}
-</style>
-        <title>My Final Project</title>
-        <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"> -->
-    </head>
-    <body>
-        <ul class="navbarmany">
-            <li ><a href="{{ url_for('home')}}">Home</a></li>
-            <li ><a href="{{ url_for('stories_page')}}">Read Stories</a></li>
-            <li><a href="{{ url_for('add_articles_route')}}">Share Your Story!</a></li>
-            <li ><a href="{{ url_for('login_route')}}">Log In!</a></li>
-            <li ><a href="{{ url_for('logout_route')}}">Log Out!</a></li>
-            <li ><a href="{{ url_for('signup_route')}}">Sign Up!</a></li>
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 70px;
+        }
+        .navbarmany {
+            padding-left: 200px;
 
+        }
+        li a:hover {
+            background-color: white;
+            color: #1abc9c;
+        }
+    </style>
+    <title>My Final Project</title>
+    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"> -->
+</head>
+<body>
+    <div id="navbar">
+      <ul id="MenuBar1" class="MenuBarHorizontal">
+          <li ><a href="{{ url_for('home')}}">Home</a></li>
+          <li ><a href="{{ url_for('stories_page')}}">Read Stories</a></li>
+          <li><a href="{{ url_for('add_articles_route')}}">Share Your Story!</a></li>
+          <li ><a href="{{ url_for('login_route')}}">Log In!</a></li>
+          <li ><a href="{{ url_for('logout_route')}}">Log Out!</a></li>
+          <li ><a href="{{ url_for('signup_route')}}">Sign Up!</a></li>
+      </ul>
+    </div> 
+        
 
-        </ul>
-    {% block body %}{% endblock %}
+        {% block body %}{% endblock %}
 
 
     </body>
-</html>
+    </html>
