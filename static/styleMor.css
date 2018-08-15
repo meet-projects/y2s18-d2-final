@@ -18,12 +18,11 @@
 
 .signUp{
 	position: absolute;
-
     margin-left:28%;
-    top: 40px;
+    top: 6%;
     width: 40%;
 	font-family: "Palanquin", Times, serif;
-	font-size: 35px;
+	font-size: 20%;
 	background-color:#1abc9c;
 	border-top-left-radius: 25px;
 	border-top-right-radius: 25px;
@@ -32,10 +31,11 @@
 .nationality{
 	position: absolute;
     margin-left:28%;
-    top: 340px;
+    top: 50%;
     width: 40%;
+    height: 43%;
 	font-family: "Palanquin", Times, serif;
-	font-size: 20px;
+	font-size: 110%;
 	background-color:#1abc9c;
 	color: white;
 	border-bottom-right-radius: 25px;
@@ -47,13 +47,21 @@ input[type=text]{
 	width: 50%;
 	height: 40px;
 	margin-left: 130px;
+	border-top-right-radius:50%;
+	border-bottom-left-radius: 50%;
+	text-align: center;
 }
 
 input[type=password]{
 	width: 50%;
 	height: 40px;
 	margin-left:130px;
+	margin-top: 1%;
+	margin-bottom: 1%;
 	color: white;
+	border-top-right-radius:50%;
+	border-bottom-left-radius: 50%;
+	text-align: center;
 }
 
 input[type=submit]{
@@ -62,6 +70,8 @@ input[type=submit]{
 	color:#1abc9c;
 	margin-left:175px;
 	margin-bottom: 30px;
+	border-radius: 25px;
+	background-color: white;
 
 }
 
@@ -69,14 +79,16 @@ input[type=radio]{
 	width: 3%;
 	height: 20px;
 	margin-left: 205px;
+	background-color: white;
 
 }
 
 #other{
 	width: 25%;
-	height: 20px;
-	margin-top:10px;
-	margin-left:200px;
+	height: 10%;
+	margin-top:5%;
+	margin-left:37%;
+	margin-bottom: 1%;
 }
 
 
