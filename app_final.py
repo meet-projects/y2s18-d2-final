@@ -60,7 +60,7 @@ def stories_page():
 
 @app.route('/login', methods=['GET', 'POST'])
 def login_route():
-  if session['logged_in']==True:
+  if 'logged_in' in session and session['logged_in']==True:
     return redirect (url_for('home'))
   if request.method == 'POST':
     print('hey')

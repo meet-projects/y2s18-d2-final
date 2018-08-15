@@ -28,7 +28,8 @@ li a {
    
 }
 li a:hover {
-    background-color: black;
+    background-color: white;
+    color: #1abc9c;
 }
 </style>
         <title>My Final Project</title>
@@ -40,6 +41,10 @@ li a:hover {
             <li ><a href="{{ url_for('stories_page')}}">Read Stories</a></li>
             <li><a href="{{ url_for('add_articles_route')}}">Share Your Story!</a></li>
             <li ><a href="{{ url_for('login_route')}}">Log In!</a></li>
+            <li ><a href="{{ url_for('logout_route')}}">Log Out!</a></li>
+            <li ><a href="{{ url_for('signup_route')}}">Sign Up!</a></li>
+
+
         </ul>
     {% block body %}{% endblock %}
 

@@ -48,7 +48,7 @@ def query_by_password(password):
 
 
 # print(get_all_articles())
-#print(get_all_users())   
+#(get_all_users())   
 #print(query_by_password('s'))
 
 
