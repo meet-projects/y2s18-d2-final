@@ -23,6 +23,7 @@ def add_articles_route():
       print ('Received POST request for adding an article!')
       title = request.form['article_title']
       content = request.form['article_content']
+      user_id=session['user_id']
       
       add_article(title, content,user_id)
       return render_template('story2.html')        
