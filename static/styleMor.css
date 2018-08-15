@@ -25,6 +25,7 @@
 	background-color:#1abc9c;
 	border-top-left-radius: 25px;
 	border-top-right-radius: 25px;
+	margin-top: 1%;
 }
 
 .nationality{
@@ -57,7 +58,7 @@ input[type=password]{
 	margin-left:130px;
 	margin-top: 1%;
 	margin-bottom: 1%;
-	color: white;
+	color: black;
 	border-top-right-radius:50%;
 	border-bottom-left-radius: 50%;
 	text-align: center;
@@ -150,6 +151,3 @@ a{
 
 }
 
-.signUp{
-	margin-top: 10%;
-}
