@@ -57,10 +57,10 @@ input[type=password]{
 	margin-left:130px;
 	margin-top: 1%;
 	margin-bottom: 1%;
-	color: white;
 	border-top-right-radius:50%;
 	border-bottom-left-radius: 50%;
 	text-align: center;
+	color:black;
 }
 
 input[type=submit]{
