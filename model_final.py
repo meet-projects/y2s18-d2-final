@@ -1,16 +1,22 @@
-from sqlalchemy import Column, Integer, String, Boolean
+from sqlalchemy import Column, Integer, String, Boolean, ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import relationship, sessionmaker
+from sqlalchemy.orm import relationship, sessionmaker 
 from sqlalchemy import create_engine
 
 Base = declarative_base()
 
 
 class Article(Base):
-    __tablename__ = "articles"
+    __tablename__ = "article"
     id = Column(Integer, primary_key = True)
     title = Column(String)
     content= Column(String)
+    user_id = Column(Integer, ForeignKey('user.id'))
+    user = relationship("User", back_populates="article") 
+
+
+
+
 
     def __repr__(self):
         return ("article title: {}, article content:{}".format(self.title, self.content))
@@ -19,12 +25,14 @@ class Article(Base):
 
 
 class User(Base):
-  __tablename__="users"
+  __tablename__="user"
   id=Column(Integer, primary_key=True)
   nationality=Column(String)
   name=Column(String, unique=True )
   email=Column(String)
-  password=Column(String) 
+  password=Column(String)
+  articles = relationship("User", back_populates="user")
+  
 
 
   def __repr__(self):
