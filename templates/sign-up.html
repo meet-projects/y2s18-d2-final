@@ -19,22 +19,23 @@
    {% endblock %}
         
     {% block body %}
+    <body>
         
     	
 
     	<div class="signUp">
 		<form method="POST">
-        	<h1>sign-up</h1>
-        	<input type="text" name="name" placeholder="full name">
-        	<input type="password" name="password" placeholder="password">
+        	<h1>Sign-Up</h1>
+        	<input type="text" name="name" placeholder="Full Name">
+        	<input type="password" name="password" placeholder="Password">
         	<input type="text" name="email" placeholder="E-mail">
         	<br>
 
 
 
-        </div>
+<!--         </div>
     
-        <div class="nationality">
+        <div class="nationality"> -->
 
         	<h4>please enter your nationality</h4>
         	<input  id="Palestinian" type="radio" name="nationality" value="Palestinian">Palestinian
@@ -46,7 +47,7 @@
             <input type="text" name="nationality" placeholder="" id="other">
         	<br>
             <br>
-      		<input type="submit" value="sign-up">
+      		<input type="submit" value="SignUp">
         </form>
     </div>
     {% endblock %}
