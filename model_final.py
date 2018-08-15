@@ -11,6 +11,7 @@ class Article(Base):
     id = Column(Integer, primary_key = True)
     title = Column(String)
     content= Column(String)
+    image= Column(String)
     user_id = Column(Integer, ForeignKey('user.id'))
     # user = relationship("User") 
 

@@ -11,9 +11,9 @@ DBSession = sessionmaker(bind=engine)
 session = DBSession()
 
 
-def add_article(title, content, user_id):
+def add_article(title, content, user_id,image):
     print("Added an article!")
-    article = Article(title=title, content=content, user_id=user_id)
+    article = Article(title=title, content=content, user_id=user_id, image=image)
     session.add(article)
     session.commit()
 

@@ -6,8 +6,8 @@ app = Flask(__name__)
 app.secret_key ="I love ido he is literally the best and i love him"
 
 @app.route('/')
-def home():
-  return render_template('NEW_HOME.html')
+def home(logged_in=False):
+  return render_template('NEW_HOME.html', logged_in=session['logged_in'])
 
 # @app.route('/articles')
 # def articles():
@@ -16,17 +16,20 @@ def home():
 
 @app.route('/add_article', methods=['GET', 'POST'])
 def add_articles_route():
-  if session['logged_in']==True:  
-    if request.method == 'GET':
-      return render_template('story.html')
-    if request.method=="POST":
-      print ('Received POST request for adding an article!')
-      title = request.form['article_title']
-      content = request.form['article_content']
-      user_id=session['user_id']
-      
-      add_article(title, content,user_id)
-      return render_template('story2.html')        
+  if 'logged_in' in session:
+    if session['logged_in']==True:  
+      if request.method == 'GET':
+        return render_template('story.html')
+      if request.method=="POST":
+        print ('Received POST request for adding an article!')
+        title = request.form['article_title']
+        content = request.form['article_content']
+        user_id=session['user_id']
+        image=request.form['image']
+        add_article(title, content,user_id,image)
+        return render_template('story2.html')
+    else:
+      return redirect(url_for('login_route'))            
   else:
     return redirect(url_for('login_route'))
         
@@ -53,8 +56,10 @@ def signup_route():
 
 @app.route('/stories')
 def stories_page():
+  articles=get_all_articles()
+  articles.reverse()
 
-  return render_template('stories_page.html', articles = get_all_articles())
+  return render_template('stories_page.html', articles = articles)
 
 
 
@@ -72,7 +77,8 @@ def login_route():
       if request.form['password']==user.password:
         session['logged_in'] = True
         session['user_id']=user.id
-        return render_template('login.html')
+        return redirect(url_for('home', logged_in = True))
+      return render_template('log_in.html')
 
   else:
     return render_template('log_in.html') 
