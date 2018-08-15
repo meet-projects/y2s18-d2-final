@@ -27,8 +27,8 @@ def add_articles_route():
       
       add_article(title, content,user_id)
       return render_template('story2.html')        
-    else:
-      return render_template('login.html')
+  else:
+    return redirect(url_for('login_route'))
         
 
 @app.route('/signup', methods=['GET', 'POST'])
@@ -60,6 +60,8 @@ def stories_page():
 
 @app.route('/login', methods=['GET', 'POST'])
 def login_route():
+  if 'logged_in' in session and session['logged_in']==True:
+    return redirect (url_for('home'))
   if request.method == 'POST':
     print('hey')
     user=query_by_username(request.form['name'])
@@ -71,17 +73,20 @@ def login_route():
         session['logged_in'] = True
         session['user_id']=user.id
         return render_template('login.html')
+
   else:
-    return render_template('log_in.html')            
+    return render_template('log_in.html') 
+
       
 
 
 @app.route('/logout')
 def logout_route():
-  del session['user_id']
-  session['logged_in']=False
+  if 'user_id' in session:
+    del session['user_id']
+    session['logged_in']=False
   return redirect(url_for('home'))
-  print('loged out')
+  print('logged out')
 
 
 

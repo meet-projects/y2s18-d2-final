@@ -1,21 +1,22 @@
+<html lang="en">
 {% extends "Navigationbar.html" %}
-
- {% block head %} 
+{% block head %} 
 
         <title>storeal</title>
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styleMor.css') }}">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styleMor2.css') }}">
 
         <link rel="stylesheet" type="text/css" href="../static/styleMor2.css">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
         <script src="story.js"></script>
-
-{% endblock %}
-        
+        {% endblock %}
         {% block body %}
-    </head>
-    <body>
     	<div class="story">
     		<form method="POST">
     		<h1>share your story!</h1>
