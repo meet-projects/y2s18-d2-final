@@ -69,18 +69,17 @@ h1{
 	font-size: 70px;
 }
 
-/*@media only screen and (min-width: 601px) {
-  div.Login {
-    font-size: 80px;
-  }
+@media only screen and (min-width: 1101px) {
+	h1 {
+    	font-size: 80px;
+	}
 }
 
- If the screen size is 600px or less, set the font-size of <div> to 30px 
-@media only screen and (max-width: 500px) {
-  div.Login {
-    font-size: 30px;
-  }
-}*/
+@media only screen and (max-width: 1100px) {
+    h1 {
+    	font-size: 30px;
+    }
+}
 
 /*h2{
 	position: relative;
