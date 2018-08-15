@@ -1,6 +1,6 @@
 
 from model_final import Base, Article, User 
-
+    
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
@@ -11,9 +11,9 @@ DBSession = sessionmaker(bind=engine)
 session = DBSession()
 
 
-def add_article(title, content):
+def add_article(title, content, user_id):
     print("Added an article!")
-    article = Article(title=title, content=content)
+    article = Article(title=title, content=content, user_id=user_id)
     session.add(article)
     session.commit()
 

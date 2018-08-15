@@ -12,7 +12,7 @@ class Article(Base):
     title = Column(String)
     content= Column(String)
     user_id = Column(Integer, ForeignKey('user.id'))
-    user = relationship("User", back_populates="article") 
+    # user = relationship("User") 
 
 
 
@@ -31,7 +31,7 @@ class User(Base):
   name=Column(String, unique=True )
   email=Column(String)
   password=Column(String)
-  articles = relationship("User", back_populates="user")
+ 
   
 
 

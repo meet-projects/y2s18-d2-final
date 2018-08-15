@@ -15,7 +15,8 @@
 	border-style: solid;
     border-width: 3px;
     border-radius: 50px;
-    background-color: white;
+    background-color: rgba(130, 130, 130, 0.5);
+
 
 
 }
@@ -23,6 +24,12 @@
 body{
 	/*margin-top: 10%;*/
 	background-color: #2f2f1e;
+	margin-top:8%;
+	/*background-color: #2f2f1e;*/
+	background-image: url("dark.jpg");
+	background-repeat: no-repeat;
+	background-size : 1400px 790px;
+
 }
 
 input[type=text]{
@@ -31,7 +38,7 @@ input[type=text]{
 	height: 80px;	
 	text-align: center;
 	left :25%;
-	background-color:#a5f3e3;
+	background-color:#1abc9c;
 	border-bottom-left-radius: 75%;
 	border-top-right-radius: 75%;
 
@@ -43,7 +50,7 @@ input[type=password]{
 	height: 80px;
 	text-align: center;
 	left :25%;
-	background-color:#a5f3e3;
+	background-color:#1abc9c;
 	border-bottom-left-radius: 75%;
 	border-top-right-radius: 75%;
 }
@@ -62,6 +69,18 @@ h1{
 	color: #1abc9c ;
 	text-align: center;
 	font-size: 70px;
+}
+
+@media only screen and (min-width: 1101px) {
+	h1 {
+    	font-size: 80px;
+	}
+}
+
+@media only screen and (max-width: 1100px) {
+    h1 {
+    	font-size: 30px;
+    }
 }
 
 /*h2{
