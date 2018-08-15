@@ -91,83 +91,6 @@ input[type=radio]{
 }
 
 
-<<<<<<< HEAD
-.story{
-	position: absolute;
-    margin-left: 250px;
-    top: 40px;
-    width: 60%;
-	font-family: "Palanquin", Times, serif;
-	font-size: 35px;
-}
-
-.signUp{
-	position: absolute;
-
-    margin-left:28%;
-    top: 40px;
-    width: 40%;
-	font-family: "Palanquin", Times, serif;
-	font-size: 35px;
-	background-color:#1abc9c;
-	border-top-left-radius: 25px;
-	border-top-right-radius: 25px;
-}
-
-.nationality{
-	position: absolute;
-    margin-left:28%;
-    top: 340px;
-    width: 40%;
-	font-family: "Palanquin", Times, serif;
-	font-size: 20px;
-	background-color:#1abc9c;
-	color: white;
-	border-bottom-right-radius: 25px;
-	border-bottom-left-radius: 25px;
-}
-
-
-input[type=text]{
-	width: 50%;
-	height: 40px;
-	margin-left: 130px;
-}
-
-input[type=password]{
-	width: 50%;
-	height: 40px;
-	margin-left:130px;
-	color: white;
-}
-
-input[type=submit]{
-	width: 35%;
-	height: 40px;
-	color:#1abc9c;
-	margin-left:175px;
-	margin-bottom: 30px;
-
-}
-
-input[type=radio]{
-	width: 3%;
-	height: 20px;
-	margin-left: 205px;
-
-}
-
-#other{
-	width: 25%;
-	height: 20px;
-	margin-top:10px;
-	margin-left:200px;
-}
-
-
-=======
->>>>>>> 7b47e2c04819e9a6f837da26634dd7e566fb259f
-
 h1{
 	font-family: "Palanquin", Times, serif;
 	color:white;
@@ -226,10 +149,7 @@ a{
 	border-radius:25px;
 
 }
-<<<<<<< HEAD
 
 .signUp{
 	margin-top: 10%;
 }
-=======
->>>>>>> 7b47e2c04819e9a6f837da26634dd7e566fb259f
