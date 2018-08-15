@@ -7,7 +7,7 @@ app.secret_key ="I love ido he is literally the best and i love him"
 
 @app.route('/')
 def home(logged_in=False):
-  return render_template('NEW_HOME.html', logged_in=session['logged_in'])
+  return render_template('NEW_HOME.html', logged_in=session.get('logged_in'))
 
 # @app.route('/articles')
 # def articles():
