@@ -6,9 +6,9 @@
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-         <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
- -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+       <!--  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styleMor2.css') }}">
 
         <link rel="stylesheet" type="text/css" href="../static/styleMor2.css">
@@ -25,13 +25,13 @@
     	<div class="story">
     		<form method="POST">
     		<h1>share your story!</h1>
-        	<input type="text" name="article_title" placeholder=" Title">
+        	<input type="text" name="article_title" placeholder=" title">
             <br>
             <input type = "text" name = "image" placeholder=" Add the image url here(only jpg and png) :)">
             <br>
             <textarea rows="10" name="article_content" cols="54" class="text" placeholder=" Write your story here!"></textarea>
         	<br>
-        	<input id="submit" type="submit" value="Share story">
+        	<input id="submit" type="submit" value="share story">
         </form>
     </div>
     {% endblock %}
