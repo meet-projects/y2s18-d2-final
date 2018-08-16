@@ -4,7 +4,8 @@
     {% block head %}{% endblock %}
     <style>
         ul {
-            font-family: "Trebuchet MS", Times, serif;
+            font-family:"FreeMono", monospace;
+            font-size: 17px;
             text-decoration: underline;
             margin: 0;
             padding : 0;
@@ -22,7 +23,7 @@
             display: block;
             color: white;
             text-align: center;
-            padding: 14px 70px;
+            padding: 14px 60px;
         }
         .navbarmany {
             padding-left: 200px;
@@ -41,10 +42,10 @@
       <ul id="MenuBar1" class="MenuBarHorizontal">
           <li ><a href="{{ url_for('home')}}">Home</a></li>
           <li ><a href="{{ url_for('stories_page')}}">Read Stories</a></li>
-          <li><a href="{{ url_for('add_articles_route')}}">Share Your Story!</a></li>
-          <li ><a href="{{ url_for('login_route')}}">Log In!</a></li>
-          <li ><a href="{{ url_for('logout_route')}}">Log Out!</a></li>
-          <li ><a href="{{ url_for('signup_route')}}">Sign Up!</a></li>
+          <li><a href="{{ url_for('add_articles_route')}}">Share Your Story</a></li>
+          <li ><a href="{{ url_for('login_route')}}">Log In</a></li>
+          <li ><a href="{{ url_for('logout_route')}}">Log Out</a></li>
+          <li ><a href="{{ url_for('signup_route')}}">Sign Up</a></li>
       </ul>
     </div> 
         
