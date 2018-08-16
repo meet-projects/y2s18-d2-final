@@ -6,8 +6,13 @@ app = Flask(__name__)
 app.secret_key ="I love ido he is literally the best and i love him"
 
 @app.route('/')
-def home(logged_in=False):
-  return render_template('NEW_HOME.html', logged_in=session.get('logged_in'))
+def home():
+  if session.get('display_login') == True:
+    session['display_login'] = False
+    return render_template('NEW_HOME.html', logged_in=True)
+  else:
+    return render_template('NEW_HOME.html', logged_in=False)
+
 
 # @app.route('/articles')
 # def articles():
@@ -51,7 +56,9 @@ def signup_route():
       print ('we already have a user with that name')
     else:   
       add_user(nationality, name, email, password)
-    return render_template('NEW_HOME.html')
+      session['display_login'] = True
+    # return render_template('NEW_HOME.html')
+    return redirect(url_for('home'))
 
 
 @app.route('/stories')
@@ -77,7 +84,8 @@ def login_route():
       if request.form['password']==user.password:
         session['logged_in'] = True
         session['user_id']=user.id
-        return redirect(url_for('home', logged_in = True))
+        session['display_login'] = True
+        return redirect(url_for('home'))
       return render_template('log_in.html')
 
   else:
