@@ -1,15 +1,8 @@
-/*.Login{
-	position: absolute;
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-	/*font-family: "Palanquin", Times, serif;*/
-	/*font-size: 20px;*/
-/*}*/
+
 .Login{
 	position: relative;
 	left: 25%;
-	width:50%;
+	width:51%;
 	padding: 0;
 	margin: 0;
 	border-style: solid;
@@ -22,10 +15,8 @@
 }
 
 body{
-	/*margin-top: 10%;*/
+	margin-top: 0px;
 	background-color: #2f2f1e;
-	margin-top:8%;
-	/*background-color: #2f2f1e;*/
 	background-image: url("dark.jpg");
 	background-repeat: no-repeat;
 	background-size : 1400px 790px;
